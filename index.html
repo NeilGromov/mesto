@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Подключение стилей -->
+  <link href="./pages/index.css" rel="stylesheet">
+  <title>Mesto Russia</title>
+  <!--Подключение скриптов-->
+  <script src="./scripts/index.js" defer></script>
+</head>
+  <body class="body">
+    <div class="page">
+      <!-- Шапка сайта -->
+      <header class="header">
+        <img src="./images/logo.svg" class="header__logo" alt="Логотип проекта Mesto">
+      </header>
+      <main>
+        <!-- Секции профиля -->
+        <section class="profile">
+          <img src="./images/profile__avatar.jpg" class="profile__avatar" alt="Аватар профиля">
+          <div class="profile__info">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button type="button" class="profile__editor" aria-label="Редактировать аватар профиля"></button>
+            <p class="profile__description">Исследователь океана</p>
+          </div>
+          <button type="button" class="profile__add-mesto" aria-label="Добавить место"></button>
+        </section>
+        <!-- Секция карт -->
+        <section class="cards">
+          <div class="cards__item">
+            <img src="./images/Moskow.jpg" class="cards__image" alt="Изображение мавзолея Ленина в Москве">
+            <div class="cards__info">
+              <h2 class="cards__description">Москва</h2>
+              <button type="button" class="cards__like" aria-label="Like"></button>
+            </div>
+          </div>
+          <div class="cards__item">
+            <img src="./images/Elbrus.jpg" class="cards__image" alt="Изображение пирамидок камней на фоне горы Эльбрус">
+            <div class="cards__info">
+              <h2 class="cards__description">Гора Эльбрус</h2>
+              <button type="button" class="cards__like" aria-label="Like"></button>
+            </div>
+          </div>
+          <div class="cards__item">
+            <img src="./images/Krasnaya_Polyana.jpg" class="cards__image" alt="Изображение водопада в Красной Поляне">
+            <div class="cards__info">
+              <h2 class="cards__description">Красная Поляна</h2>
+              <button type="button" class="cards__like" aria-label="Like"></button>
+            </div>
+          </div>
+          <div class="cards__item">
+            <img src="./images/Altai.jpg" class="cards__image" alt="Изображение гор Алтая">
+            <div class="cards__info">
+              <h2 class="cards__description">Алтай</h2>
+              <button type="button" class="cards__like" aria-label="Like"></button>
+            </div>
+          </div>
+          <div class="cards__item">
+            <img src="./images/Dombay.jpg" class="cards__image" alt="Изображение гор Домбая">
+            <div class="cards__info">
+              <h2 class="cards__description">Домбай</h2>
+              <button type="button" class="cards__like" aria-label="Like"></button>
+            </div>
+          </div>
+          <div class="cards__item">
+            <img src="./images/Kamchatka3.jpg" class="cards__image" alt="Изображение горячего источника на Камчатке">
+            <div class="cards__info">
+              <h2 class="cards__description">Камчатка</h2>
+              <button type="button" class="cards__like" aria-label="Like"></button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Подвал сайта -->
+      <footer class="footer">
+        <p class="footer__description">© 2023 Mesto Russia</p>
+      </footer>
+    </div>
+    <!-- Начало popup редактирования профиля аватара-->
+    <div class="popup-edit">
+      <div class="popup-edit__container">
+        <button type="button" class="popup-edit__close" aria-label="Закрыть форму"></button>
+        <h3 class="popup-edit__name">Редактировать профиль</h3>
+        <form class="popup-edit__form" name="profile">
+          <label>
+            <input type="text" value="Жак-Ив Кусто" class="popup-edit__input popup-edit__input_item_name"
+            name="username" required placeholder="Ваше имя">
+          </label>
+          <label>
+            <input type="text" value="Исследователь океана" class="popup-edit__input popup-edit__input_item_description"
+            name="description" required placeholder="Ваш род занятий">
+          </label>
+          <button type="submit" class="popup-edit__submit" aria-label="Сохранить">Сохранить</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
