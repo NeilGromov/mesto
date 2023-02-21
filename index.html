@@ -78,20 +78,16 @@
       </footer>
     </div>
     <!-- Начало popup редактирования профиля аватара-->
-    <div class="popup-edit">
-      <div class="popup-edit__container">
-        <button type="button" class="popup-edit__close" aria-label="Закрыть форму"></button>
-        <h3 class="popup-edit__name">Редактировать профиль</h3>
-        <form class="popup-edit__form" name="profile">
-          <label>
-            <input type="text" value="Жак-Ив Кусто" class="popup-edit__input popup-edit__input_item_name"
-            name="username" required placeholder="Ваше имя">
-          </label>
-          <label>
-            <input type="text" value="Исследователь океана" class="popup-edit__input popup-edit__input_item_description"
-            name="description" required placeholder="Ваш род занятий">
-          </label>
-          <button type="submit" class="popup-edit__submit" aria-label="Сохранить">Сохранить</button>
+    <div class="popup">
+      <div class="popup__container">
+        <button type="button" class="popup__close" aria-label="Закрыть форму"></button>
+        <h3 class="popup__name">Редактировать профиль</h3>
+        <form class="popup__form" name="profile">
+          <input type="text" value="Жак-Ив Кусто" class="popup__input popup__input_name"
+          name="username" required placeholder="Ваше имя">
+          <input type="text" value="Исследователь океана" class="popup__input popup__input_description"
+          name="description" required placeholder="Ваш род занятий">
+          <button type="submit" class="popup__submit" aria-label="Сохранить">Сохранить</button>
         </form>
       </div>
     </div>
