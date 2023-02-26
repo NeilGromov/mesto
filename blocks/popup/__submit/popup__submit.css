@@ -16,12 +16,13 @@
 }
 
 .popup__submit:hover {
-  background-color:rgb(0,0,0, 0.5);
+  background-color:rgb(0,0,0, 0.8);
   cursor: pointer;
 }
 
 @media screen and (max-width: 644px) {
   .popup__submit {
+    margin: 9px auto 0 auto;
     width: 238px;
     font-size: 14px;
     line-height: 17px;

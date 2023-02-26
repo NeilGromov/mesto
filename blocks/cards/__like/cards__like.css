@@ -12,8 +12,3 @@
   opacity: 0.5;
   cursor: pointer;
 }
-
-/* Изображение активного лайка */
-.cards__like:active {
-  background-image: url('../../../images/liked.svg');
-}
