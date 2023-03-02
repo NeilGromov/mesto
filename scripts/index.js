@@ -9,9 +9,9 @@ const profileName = document.querySelector('.profile__name');
 // Получаем описание профиля
 const profileDescription = document.querySelector('.profile__description');
 // Получаем input имени
-const nameInput = popupEditProfile.querySelector('.popup__input_name');
+const nameInput = popupEditProfile.querySelector('.popup__input_item_name');
 // Получаем input описания
-const descriptionInput = popupEditProfile.querySelector('.popup__input_description');
+const descriptionInput = popupEditProfile.querySelector('.popup__input_item_description');
 
 // Функция открытия popup
 const popupOpen = function () {

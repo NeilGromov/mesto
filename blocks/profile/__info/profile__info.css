@@ -7,7 +7,7 @@
                          minmax(min-content, max-content);
   align-items: center;
   box-sizing: border-box;
-  gap: 16px 18px;
+  gap: 7px;
 }
 
 @media screen and (max-width: 644px) {
@@ -15,6 +15,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 14px 10px;
+    gap: 11px;
   }
 }
