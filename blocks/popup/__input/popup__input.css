@@ -14,12 +14,14 @@
   line-height: 17px;
 }
 
-.popup__input:last-child {
-  margin-bottom: 37px;
+@media screen and (max-width: 1280px) {
+  .popup__input_item_description {
+    margin-bottom: 48px;
+  }
 }
 
-@media screen and (max-width: 373px) {
-  .popup__input:last-child {
-    margin-bottom: 48px;
+@media screen and (max-width: 1280px) {
+  .popup__input_item_name {
+    margin-bottom: 30px;
   }
 }
